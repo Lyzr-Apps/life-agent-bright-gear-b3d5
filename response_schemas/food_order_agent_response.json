@@ -1,0 +1,42 @@
+{
+  "agent_name": "Food Order Agent",
+  "agent_id": "69995812fc4ac560ff186433",
+  "description": "Assists user in ordering food by understanding cravings, cuisine preferences, dietary restrictions, and delivery address. Searches restaurants and menus, recommends options, and compiles the final order for confirmation",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "message": "string",
+    "order_details": {
+      "restaurant": "string",
+      "items": [
+        {
+          "name": "string",
+          "price": "string",
+          "customizations": "string"
+        }
+      ],
+      "estimated_total": "string",
+      "delivery_time": "string",
+      "delivery_address": "string",
+      "status": "string"
+    }
+  },
+  "example_response": {
+    "message": "The agent's conversational response",
+    "order_details": {
+      "restaurant": "sample string",
+      "items": [
+        {
+          "name": "sample string",
+          "price": "sample string",
+          "customizations": "sample string"
+        }
+      ],
+      "estimated_total": "sample string",
+      "delivery_time": "sample string",
+      "delivery_address": "sample string",
+      "status": "sample string"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "agent_name": "Shopping Assistant Agent",
+  "agent_id": "69995812f43190cdde8496c9",
+  "description": "Helps user find and order miscellaneous products (electronics, clothing, household items, gifts, etc.). Understands requirements, compares options and prices via web search, and presents a purchase-ready summary",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "message": "string",
+    "product_recommendations": [
+      {
+        "name": "string",
+        "price": "string",
+        "rating": "string",
+        "store": "string",
+        "pros": "string",
+        "cons": "string"
+      }
+    ],
+    "purchase_summary": {
+      "selected_product": "string",
+      "total_cost": "string",
+      "store": "string",
+      "status": "string"
+    }
+  },
+  "example_response": {
+    "message": "The agent's conversational response",
+    "product_recommendations": [
+      {
+        "name": "Sony WH-1000XM5",
+        "price": "$348.00",
+        "rating": "4.8/5",
+        "store": "Amazon",
+        "pros": "Best-in-class noise cancellation, comfortable",
+        "cons": "Premium price"
+      }
+    ],
+    "purchase_summary": {
+      "selected_product": "Not selected",
+      "total_cost": "$0.00",
+      "store": "Not selected",
+      "status": "gathering_requirements"
+    }
+  }
+}

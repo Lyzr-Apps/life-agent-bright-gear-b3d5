@@ -1,0 +1,46 @@
+{
+  "workflow": {
+    "nodes": [
+      {
+        "id": "input_node",
+        "type": "Input",
+        "label": "User Input",
+        "nodeCategory": "input"
+      },
+      {
+        "id": "grocery_agent",
+        "type": "Agent",
+        "label": "Grocery Order Agent",
+        "nodeCategory": "agent",
+        "agent_id": "69995811711ecaca449d0600"
+      },
+      {
+        "id": "appointment_agent",
+        "type": "Agent",
+        "label": "Appointment Booking Agent",
+        "nodeCategory": "agent",
+        "agent_id": "69995811f43190cdde8496c7"
+      },
+      {
+        "id": "food_agent",
+        "type": "Agent",
+        "label": "Food Order Agent",
+        "nodeCategory": "agent",
+        "agent_id": "69995812fc4ac560ff186433"
+      },
+      {
+        "id": "shopping_agent",
+        "type": "Agent",
+        "label": "Shopping Assistant Agent",
+        "nodeCategory": "agent",
+        "agent_id": "69995812f43190cdde8496c9"
+      }
+    ],
+    "edges": [
+      { "source": "input_node", "target": "grocery_agent" },
+      { "source": "input_node", "target": "appointment_agent" },
+      { "source": "input_node", "target": "food_agent" },
+      { "source": "input_node", "target": "shopping_agent" }
+    ]
+  }
+}

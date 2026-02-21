@@ -1,0 +1,34 @@
+{
+  "agent_name": "Appointment Booking Agent",
+  "agent_id": "69995811f43190cdde8496c7",
+  "description": "Handles appointment scheduling for doctors, restaurants, salons, and other services. Asks for type, preferred date/time, location, and specific provider. Searches available slots and options, presents choices, and confirms booking details",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "message": "string",
+    "appointment_details": {
+      "type": "string",
+      "provider": "string",
+      "date": "string",
+      "time": "string",
+      "location": "string",
+      "status": "string",
+      "calendar_event_created": "boolean",
+      "notes": "string"
+    }
+  },
+  "example_response": {
+    "message": "The agent's conversational response",
+    "appointment_details": {
+      "type": "sample string",
+      "provider": "sample string",
+      "date": "sample string",
+      "time": "sample string",
+      "location": "sample string",
+      "status": "sample string",
+      "calendar_event_created": false,
+      "notes": "sample string"
+    }
+  }
+}

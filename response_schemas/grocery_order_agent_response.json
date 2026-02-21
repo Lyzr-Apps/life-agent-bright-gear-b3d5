@@ -1,0 +1,40 @@
+{
+  "agent_name": "Grocery Order Agent",
+  "agent_id": "69995811711ecaca449d0600",
+  "description": "Converses with user to understand grocery needs (items, quantities, dietary preferences, store preference), searches for availability and pricing via web, compiles a structured order summary, and confirms before placing",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "message": "string",
+    "order_summary": {
+      "items": [
+        {
+          "name": "string",
+          "quantity": "string",
+          "estimated_price": "string",
+          "category": "string"
+        }
+      ],
+      "estimated_total": "string",
+      "store": "string",
+      "status": "string"
+    }
+  },
+  "example_response": {
+    "message": "The agent's conversational response",
+    "order_summary": {
+      "items": [
+        {
+          "name": "sample string",
+          "quantity": "sample string",
+          "estimated_price": "sample string",
+          "category": "sample string"
+        }
+      ],
+      "estimated_total": "sample string",
+      "store": "sample string",
+      "status": "sample string"
+    }
+  }
+}
